@@ -12,6 +12,8 @@ const Product = props => {
 			<button onClick={() => props.addItem(props.product)}>
 				Add to cart
 			</button>
+
+			
 		</div>
 	);
 };
