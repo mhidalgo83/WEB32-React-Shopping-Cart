@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
 
 const Item = (props) => {
+	console.log(props)
   const { removeItem } = useContext(CartContext);
   return (
     <div className="shopping-cart_item">
@@ -13,7 +14,7 @@ const Item = (props) => {
         <button
           onClick={(e) => {
             e.preventDefault();
-            removeItem(props.id);
+            removeItem(props);
           }}
         >
           Remove from cart
